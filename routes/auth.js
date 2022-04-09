@@ -82,7 +82,7 @@ router.post("/login", async (req, res) => {
       //    User
       res.status(200).json(user);
     }
-    console.log(username, password);
+    // console.log(username, password);
   } catch (error) {
     res.status(500).json(error);
     console.log(error);
