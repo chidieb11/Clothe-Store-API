@@ -30,13 +30,6 @@ app.use("/api/carts", cartRoute);
 app.use("/api/orders", orderRoute);
 app.use("/api/checkout", stripeRoute);
 
-// Needed during deployment
-// app.use(express.static(path.join(__dirname, "/app/build")));
-
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "/app/build", "index.html"));
-// });
-
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log(`BACKEND IS RUNNING ON PORT ${port}`);
