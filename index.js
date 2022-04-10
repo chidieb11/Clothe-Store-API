@@ -37,7 +37,7 @@ app.use("/api/checkout", stripeRoute);
 //   res.sendFile(path.join(__dirname, "/app/build", "index.html"));
 // });
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log(`BACKEND IS RUNNING ON PORT ${port}`);
 });
